@@ -23,8 +23,8 @@
 
 * Open shell or command prompt window.
 * Make sure you're located under */.../Zemoga/project* directory.
-* Compile, install, and run tests by doing: *mvn clean install*
-* Run Spring Boot server by doing: *mvn org.springframework.boot:spring-boot-maven-plugin:run*
+* Compile, install, and run tests by doing: *sh mvnw clean install*
+* Run Spring Boot server by doing: *sh mvnw spring-boot:run*
 
 ### Usage
 

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Zemoga's Portfolio Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <img th:src="${imageUrl}">
+        </td>
+        <td align="left" valign="top">
+            <b>
+                <p th:text="${name}" />
+            </b>
+            <br/>
+            <table border="1">
+                <thead>
+                    <i>
+                        My Work Experience
+                    </i>
+                </thead>
+                <tr>
+                    <td align="left">
+                        <p th:text="${description}" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td width="30%" />
+    </tr>
+</table>
+<table width="40%">
+    <tr th:each="tweet : ${tweets}">
+        <td><img th:src="${tweet.profileImageUrl}"></td>
+        <td th:text="${tweet.fromUser}">1</td>
+        <td th:text="${tweet.text}"></td>
+    </tr>
+</table>
+</body>
+</html>
